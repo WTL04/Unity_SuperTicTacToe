@@ -131,6 +131,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 377283471}
     m_Modifications:
+    - target: {fileID: 648716235718202247, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.6706
+      objectReference: {fileID: 0}
+    - target: {fileID: 648716235718202247, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.1462
+      objectReference: {fileID: 0}
     - target: {fileID: 764537576759392343, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: draw
       value: 
@@ -235,6 +243,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 974492741871312508, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 901cbdba24506534aaa092a4bbcc2732, type: 3}
     - target: {fileID: 1409703153223427245, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 4
@@ -567,6 +579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GridManager 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5231207271753079234, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 68f94b449dc5a3142ad28f3fe2ee3d7e, type: 3}
     - target: {fileID: 5944775424776724000, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1166,6 +1182,10 @@ PrefabInstance:
     - target: {fileID: 8007973648456624984, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8939109532689454666, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9023539081958329944, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_SizeDelta.x
@@ -13036,8 +13056,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 872e9610dfd20f64eafaa3344417beb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circle: {fileID: 21300000, guid: 54c9e4bd4a8d53543ae8c818c4e2b8d9, type: 3}
-  cross: {fileID: 21300000, guid: d8da7206aed73834fa79485d423b89cc, type: 3}
+  circle: {fileID: 21300000, guid: 901cbdba24506534aaa092a4bbcc2732, type: 3}
+  cross: {fileID: 21300000, guid: 68f94b449dc5a3142ad28f3fe2ee3d7e, type: 3}
   displayText: {fileID: 1317074822}
   turn: 1
 --- !u!114 &1980219171
