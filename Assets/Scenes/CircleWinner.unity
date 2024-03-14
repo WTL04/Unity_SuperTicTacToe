@@ -285,8 +285,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: O's WIN!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 60211b33fbd08024090fdf7668ccfe3a, type: 2}
+  m_sharedMaterial: {fileID: 5756172789520044420, guid: 60211b33fbd08024090fdf7668ccfe3a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

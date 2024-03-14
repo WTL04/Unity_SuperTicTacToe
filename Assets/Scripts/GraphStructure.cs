@@ -24,20 +24,20 @@ public class GraphStructure
         }
     }
 
-    public void RemoveSubGrid(int subGridIndex)
-    {
-        if (adjacencyList.ContainsKey(subGridIndex))
-        {
-            // Remove subgrid
-            foreach (var neighbor in adjacencyList[subGridIndex])
-            {
-                adjacencyList[neighbor].Remove(subGridIndex);
-            }
+    // public void RemoveSubGrid(int subGridIndex)
+    // {
+    //     if (adjacencyList.ContainsKey(subGridIndex))
+    //     {
+    //         // Remove subgrid
+    //         foreach (var neighbor in adjacencyList[subGridIndex])
+    //         {
+    //             adjacencyList[neighbor].Remove(subGridIndex);
+    //         }
 
-            // Remove the subgrid and its associated edges from the graph
-            adjacencyList.Remove(subGridIndex);
-        }
-    }
+    //         // Remove the subgrid and its associated edges from the graph
+    //         adjacencyList.Remove(subGridIndex);
+    //     }
+    // }
 
     //adds edges to nodes and their adjacent nodes
     public void AddEdges()
