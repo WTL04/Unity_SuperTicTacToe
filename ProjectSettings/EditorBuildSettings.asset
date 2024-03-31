@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: c3a3f1cd765aee6408bcc3d440f2159e
+  - enabled: 1
     path: Assets/Scenes/MainGame.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/DiffScene.unity
+    guid: 0656c3ea03db30647ba8add369504874
+  - enabled: 1
+    path: Assets/Scenes/CompGame.unity
+    guid: c4480bcd57ee0454c90eb77a2a6009f2
+  - enabled: 1
+    path: Assets/Scenes/CrossWinner.unity
+    guid: 1d35c722fdc5c4145901a1746c9af38f
+  - enabled: 1
+    path: Assets/Scenes/CircleWinner.unity
+    guid: fd99a780f88a12349b48a559a10516fd
   m_configObjects: {}
