@@ -7,6 +7,8 @@ public class MainWinner : MonoBehaviour
 {
 
     public List<GridWinManager> subGrids;
+    public List<CompManager> AIsubGrids;
+
     public int count = 0;
     public int currentPlayer;
     public int[,] backingArray = new int[3, 3];
@@ -23,6 +25,16 @@ public class MainWinner : MonoBehaviour
         count++;
         currentPlayer = GridWinManager.CurrentPlayer;
         int result = subGrids[gridIndex].winCheck();
+        backingArray[gridIndex / 3, gridIndex % 3] = result;
+        MainWinnerCheck();
+    }
+
+    // for AI singleplayer mode
+    public void AIMainGridUpdate(int gridIndex) 
+    {
+        count++;
+        currentPlayer = GridWinManager.CurrentPlayer;
+        int result = AIsubGrids[gridIndex].winCheck();
         backingArray[gridIndex / 3, gridIndex % 3] = result;
         MainWinnerCheck();
     }

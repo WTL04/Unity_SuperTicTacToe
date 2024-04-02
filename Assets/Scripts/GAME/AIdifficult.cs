@@ -29,6 +29,7 @@ public class AIdifficult : MonoBehaviour
                 difficulty = 3;
                 break;
         }
+        
     }
 
 }

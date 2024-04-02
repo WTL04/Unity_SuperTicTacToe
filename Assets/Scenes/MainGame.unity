@@ -577,7 +577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5213110157652557699, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Name
-      value: GridManager 1
+      value: playerGame
       objectReference: {fileID: 0}
     - target: {fileID: 5231207271753079234, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Sprite
@@ -1968,7 +1968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5213110157652557699, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Name
-      value: GridManager 1
+      value: playerGame
       objectReference: {fileID: 0}
     - target: {fileID: 5944775424776724000, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Pivot.x
@@ -3227,7 +3227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5213110157652557699, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Name
-      value: GridManager 1
+      value: playerGame
       objectReference: {fileID: 0}
     - target: {fileID: 5944775424776724000, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Pivot.x
@@ -5051,7 +5051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5213110157652557699, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Name
-      value: GridManager 1
+      value: playerGame
       objectReference: {fileID: 0}
     - target: {fileID: 5944775424776724000, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Pivot.x
@@ -7282,7 +7282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5213110157652557699, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Name
-      value: GridManager 1
+      value: playerGame
       objectReference: {fileID: 0}
     - target: {fileID: 5944775424776724000, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Pivot.x
@@ -8239,7 +8239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5213110157652557699, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Name
-      value: GridManager 1
+      value: playerGame
       objectReference: {fileID: 0}
     - target: {fileID: 5944775424776724000, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Pivot.x
@@ -9712,7 +9712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5213110157652557699, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Name
-      value: GridManager 1
+      value: playerGame
       objectReference: {fileID: 0}
     - target: {fileID: 5944775424776724000, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Pivot.x
@@ -11136,7 +11136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5213110157652557699, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Name
-      value: GridManager 1
+      value: playerGame
       objectReference: {fileID: 0}
     - target: {fileID: 5944775424776724000, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Pivot.x
@@ -12406,7 +12406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5213110157652557699, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Name
-      value: GridManager 1
+      value: playerGame
       objectReference: {fileID: 0}
     - target: {fileID: 5944775424776724000, guid: 4b959853edf747b4186dfd1d6a3091c3, type: 3}
       propertyPath: m_Pivot.x
@@ -13116,7 +13116,6 @@ MonoBehaviour:
   - {fileID: 1747499997}
   - {fileID: 2057830418}
   - {fileID: 1494739217}
-  result: 0
 --- !u!1 &1981535616
 GameObject:
   m_ObjectHideFlags: 0

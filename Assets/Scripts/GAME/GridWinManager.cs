@@ -12,14 +12,13 @@ public class GridWinManager : MonoBehaviour
     public GameObject circleWinner;
     public GameObject draw;
 
-
     public static int currentPlayer = 2; // X = 1, O = 2 // currentPlayer changes on CLick() so X = 2
     private int count = 0;
     public int[,] backingArray = new int[3, 3];
     
     
-    void Start() {
-        
+    void Start() 
+    {
         crossWinner.SetActive(false);
         circleWinner.SetActive(false);
         draw.SetActive(false);

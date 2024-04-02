@@ -8,6 +8,7 @@ public class CanvasManager : MonoBehaviour
 {
     public GameObject[] subGrids;
     public List<GridWinManager> gridWins;
+    public List<CompManager> AIgridWins;
     // public int result;
 
     private int nearestGrid = -1;
