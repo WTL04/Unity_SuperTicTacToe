@@ -527,11 +527,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -579,11 +579,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -631,11 +631,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -683,11 +683,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -731,11 +731,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -779,11 +779,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -835,11 +835,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -927,11 +927,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -979,11 +979,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1135,11 +1135,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1187,11 +1187,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1235,11 +1235,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1287,11 +1287,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1335,11 +1335,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1387,11 +1387,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1443,11 +1443,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1535,11 +1535,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1587,11 +1587,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1818,11 +1818,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1870,11 +1870,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1922,11 +1922,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1974,11 +1974,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2022,11 +2022,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2074,11 +2074,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2130,11 +2130,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2222,11 +2222,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2274,11 +2274,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2351,11 +2351,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2403,11 +2403,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2455,11 +2455,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2507,11 +2507,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2555,11 +2555,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2607,11 +2607,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2659,11 +2659,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2751,11 +2751,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2803,11 +2803,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3287,11 +3287,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3339,11 +3339,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3391,11 +3391,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3443,11 +3443,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3487,11 +3487,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3539,11 +3539,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3595,11 +3595,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3687,11 +3687,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3755,11 +3755,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3844,11 +3844,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3896,11 +3896,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -3948,11 +3948,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -4000,11 +4000,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -4048,11 +4048,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -4100,11 +4100,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -4156,11 +4156,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -4244,11 +4244,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -4296,11 +4296,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -5206,11 +5206,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -5254,11 +5254,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -5306,11 +5306,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -5358,11 +5358,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -5406,11 +5406,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -5458,11 +5458,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -5514,11 +5514,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -5606,11 +5606,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -5658,11 +5658,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -6849,11 +6849,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -6901,11 +6901,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -6953,11 +6953,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -7005,11 +7005,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -7053,11 +7053,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -7105,11 +7105,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -7161,11 +7161,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -7253,11 +7253,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -7301,11 +7301,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -7878,11 +7878,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 158308804311179718, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -7930,11 +7930,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 1027105114326402399, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -7982,11 +7982,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2816597312258819632, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -8030,11 +8030,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2832621311149510373, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -8078,11 +8078,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2870839271434322061, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -8130,11 +8130,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 2918694866504941126, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -8186,11 +8186,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 6307669566569239788, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -8278,11 +8278,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 7191467935453429339, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -8330,11 +8330,11 @@ PrefabInstance:
       objectReference: {fileID: 1208628657}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: statusUpdate
+      value: changeTurns
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: MainGridUpdate
+      value: AIMainGridUpdate
       objectReference: {fileID: 0}
     - target: {fileID: 8076716620316100919, guid: d39b1b26cf5f3af4badb07c892feea09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName

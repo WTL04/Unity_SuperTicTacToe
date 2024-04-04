@@ -29,7 +29,6 @@ public class CanvasManager : MonoBehaviour
     {
         graph = new GraphStructure(this);
         CreateGraph();
-        graph.PrintGraph();
     }
 
     public void SwitchCanvas(int canvasIndex)
@@ -41,7 +40,7 @@ public class CanvasManager : MonoBehaviour
     IEnumerator CanvasDelay(int canvasIndex)
     {
 
-        yield return new WaitForSeconds(0.5f); //testing, later reset to 1
+        yield return new WaitForSeconds(.5f); //testing, later reset to 1
         mainWinner = subGrids[canvasIndex].GetComponentInParent<MainWinner>(); //grants access to MainWinner backingArray
         bool wonByMove = false;
 
@@ -98,8 +97,8 @@ public class CanvasManager : MonoBehaviour
             }
         }
 
-        Debug.Log("Won Grids: " + string.Join(", ", wonGrids));
-        Debug.Log("Nearest Grid: " + nearestGrid);
+        // Debug.Log("Won Grids: " + string.Join(", ", wonGrids));
+        // Debug.Log("Nearest Grid: " + nearestGrid);
    
     }
 

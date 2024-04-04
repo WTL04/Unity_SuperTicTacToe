@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 
@@ -9,12 +10,13 @@ public class CompManager : MonoBehaviour
 {
 
     private AIdifficult AIdifficultObject; // reference to AIdifficult script, used to get difficulty
-    public int difficulty;
+    public static int difficulty;
+    public static bool isAIturn;
 
     // GridWinManager copy
-    public static int currentPlayer = 2; // X = 1, O = 2 // currentPlayer changes on CLick() so X = 2
+    public static int currentPlayer = 2; // X = 1, O = 2 // currentPlayer changes on CLick() so X = 2 // STATIC for scope ranges throughtout all subgrids
     private int count = 0;
-    public int[,] backingArray = new int[3, 3];
+    private int[,] backingArray = new int[3, 3];
 
     public Button[] buttons;
 
@@ -26,61 +28,79 @@ public class CompManager : MonoBehaviour
 
     void Start()
     {
-        // DOES NOT WORK RN
-
         // Find the AIdifficultObject in the scene
         AIdifficultObject = FindObjectOfType<AIdifficult>();
 
-        // Check if AIdifficultObject is not null
-        if (AIdifficultObject != null)
-        {
-            // Get the difficulty from AIdifficultObject
-            difficulty = AIdifficultObject.Difficulty;
-        }
-        else
-        {
-            Debug.LogError("AIdifficultObject not found in the scene!");
-        }
-
-        // FIX THIS
-        // // Instantiate the prefab as a GameObject in the scene, and accssing it's components
-        // GameObject instantiatedPrefab = Instantiate(prefab);
-        // Button[] buttons = instantiatedPrefab.GetComponentsInChildren<Button>();
+        // Get the difficulty from AIdifficultObject
+        difficulty = AIdifficultObject.Difficulty;
 
         // GridWinManager copy
         crossWinner.SetActive(false);
         circleWinner.SetActive(false);
         draw.SetActive(false);
+
+        isAIturn = (currentPlayer == 1 ) ? isAIturn = true : isAIturn = false;
     }
 
     //adds 1 or 2 to backing array
-    public void statusUpdate(int buttonIndex) {
-
-        if (currentPlayer == 2)
-        {
-            AImove();
-        }
-        
+    private void statusUpdate(int buttonIndex) {
         count++;
-
         if (backingArray[buttonIndex / 3, buttonIndex % 3] == 0) 
         {
-
             backingArray[buttonIndex / 3, buttonIndex % 3] = currentPlayer;
-            
         }
-        currentPlayer = (currentPlayer == 1) ? 2 : 1; // compact if-else statement  
-
     }
 
-    // GridWinManager copy
-    private void resetGrid() {
-        count = 0;
-        backingArray = new int[3, 3];
+    public void changeTurns(int buttonIndex)
+    {
+
+        DisableButtons(); // idek if this works
+
+        statusUpdate(buttonIndex);
+        
+        currentPlayer = (currentPlayer == 1) ? 2 : 1; // compact if-else statement
+
+        if (currentPlayer == 1)
+        {
+            isAIturn = true;
+        }
+        LogBackingArray(); // idek if this works
+
+        EnableButtons();
+         
     }
+
+    void Update()
+    {
+        if (isAIturn)
+        {
+            AImove();
+            isAIturn = false;
+            Debug.Log("AI moved");
+        }
+    }
+
+
+    private void DisableButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            button.interactable = false;
+        }
+    }
+
+    private void EnableButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            button.interactable = true;
+        }
+    }
+
 
     //checks if there are any wins in the backing array, set by the statusUpdate() function
-    public int winCheck() {
+    public int winCheck() 
+    {
 
         for (int i = 0; i < 3; i++) {
             
@@ -172,117 +192,171 @@ public class CompManager : MonoBehaviour
     }
 
 
+    public void AImove()
+    {
+        StartCoroutine(DelayedAImove());
+    }
+
+    IEnumerator DelayedAImove()
+    {
+        yield return new WaitForSeconds(2f);
+
+        Button buttonToClick;
+
+        switch(difficulty)
+        {
+            case 1:
+                // easy mode, randomly chooses
+                int randInt = UnityEngine.Random.Range(0, 9);
+                
+                while (backingArray[randInt / 3, randInt % 3] != 0)
+                {
+                    randInt = UnityEngine.Random.Range(0, 9);
+                }
+
+                buttonToClick = buttons[randInt];
+                ClickButton(buttonToClick);
+                break;
+
+            case 2:
+                // normal mode
+                break;
+
+            case 3:
+                // hard mode
+                int bestMoveIndex = Minimax3(backingArray, 0, true); 
+                if (bestMoveIndex != -1)
+                {
+                    buttonToClick = buttons[bestMoveIndex];
+                    ClickButton(buttonToClick);
+                }
+
+                break;
+
+        }
+
+    }
+
+    // // normal difficulty NOT DONE
+    // private int Minimax2(int[,] gameBoard, int depth, bool isMaximizing)
+    // {
+    //     // base case
+    //     if (depth == 9)
+    //     {
+    //         return winCheck();
+    //     }
+
+    //     // Recursive case: Generate possible moves and evaluate them
+    //     // Choose the move with the highest score for the AI (maximizer) or lowest score for the opponent (minimizer)
+
+
+
+
+    //     return 0; // debug
+    // }
+
+    // // hard difficulty, maximizing = X aka 1, minimizing = 0 aka 2
+    // private double Minimax3(int[,] gameBoard, int depth, bool isMaximizing)
+    // {  
+    //     // base case
+    //     if (depth == 9)
+    //     {
+    //         return winCheck();
+    //     }
+
+    //     // Recursive case: Generate possible moves and evaluate them
+    //     // Choose the move with the highest score for the AI (maximizer) or lowest score for the opponent (minimizer)
+
+    //     double bestScore = isMaximizing ? double.NegativeInfinity : double.PositiveInfinity;
+
+    //     for (int row = 0; row < 3; row++)
+    //     {
+    //         for (int col = 0; col < 3; col++)
+    //         {
+    //             if (gameBoard[row, col] == 0)
+    //             {
+    //                 gameBoard[row, col] = isMaximizing ? 1 : 2; // make the move
+
+    //                 double score = Minimax3(gameBoard, depth + 1, !isMaximizing); // flip flops between min and max to determine best outcome
+
+    //                 gameBoard[row, col] = 0; // undo the move
+
+    //                 if (isMaximizing)
+    //                 {
+    //                     bestScore = Math.Max(bestScore, score);
+    //                 }
+    //                 else
+    //                 {
+    //                     bestScore = Math.Min(bestScore, score);
+    //                 }
+    //             }
+    //         }
+    //     }
+        
+    //     return bestScore;
+    // }
+
+    private int Minimax3(int[,] gameBoard, int depth, bool isMaximizing)
+    {
+        Debug.Log($"Depth: {depth}");
+        // Base case
+        if (depth == 9)
+        {
+            return -1; // Return invalid move
+        }
+
+        int bestMoveIndex = -1;
+        double bestScore = isMaximizing ? double.NegativeInfinity : double.PositiveInfinity;
+
+        for (int index = 0; index < 9; index++)
+        {
+            int row = index / 3;
+            int col = index % 3;
+
+            if (gameBoard[row, col] == 0)
+            {
+                gameBoard[row, col] = isMaximizing ? 1 : 2; // make the move
+                double score = Minimax3(gameBoard, depth + 1, !isMaximizing); // flip flops between min and max to determine best outcome
+                gameBoard[row, col] = 0; // undo the move
+
+                if ((isMaximizing && score > bestScore) || (!isMaximizing && score < bestScore))
+                {
+                    bestScore = score;
+                    bestMoveIndex = index;
+                }
+            }
+        }
+        Debug.Log($"Depth: {depth}, Best Move Index: {bestMoveIndex}");
+        return bestMoveIndex;
+    }
+
+    // GridWinManager copy
+    private void resetGrid() 
+    {
+        count = 0;
+        backingArray = new int[3, 3];
+    }
+
     // programmatically triggers button click
     private void ClickButton(Button button)
     {   
         button.onClick.Invoke();
     }
 
-    public void AImove()
+    //debugging 
+    void LogBackingArray() 
     {
-        
-        switch(difficulty)
-        {
-            case 1:
-                Minimax1(backingArray, 0, true); // easy mode
-                break;
+        string arrayString = "backingArray:\n";
 
-            case 2:
-                Minimax2(backingArray, 0, true); // normal mode
-                break;
-
-            case 3:
-                Minimax3(backingArray, 0, true); // hard mode
-                break;
-
-        }
-    }
-    
-    // easy difficulty NOT DONE
-    private int Minimax1(int[,] gameBoard, int depth, bool isMaximizing)
-    {
-        // base case
-        if (depth == 9)
-        {
-            return winCheck();
-        }
-
-        // Recursive case: Generate possible moves and evaluate them
-        // Choose the move with the highest score for the AI (maximizer) or lowest score for the opponent (minimizer)
-
-        return 0; // debug
-    }
-
-    // normal difficulty NOT DONE
-    private int Minimax2(int[,] gameBoard, int depth, bool isMaximizing)
-    {
-        // base case
-        if (depth == 9)
-        {
-            return winCheck();
-        }
-
-        // Recursive case: Generate possible moves and evaluate them
-        // Choose the move with the highest score for the AI (maximizer) or lowest score for the opponent (minimizer)
-
-
-
-
-        return 0; // debug
-    }
-
-    // hard difficulty, maximizing = X aka 1, minimizing = 0 aka 2
-    private double Minimax3(int[,] gameBoard, int depth, bool isMaximizing)
-    {  
-        // base case
-        if (depth == 9)
-        {
-            return winCheck();
-        }
-
-        // Recursive case: Generate possible moves and evaluate them
-        // Choose the move with the highest score for the AI (maximizer) or lowest score for the opponent (minimizer)
-
-        if (isMaximizing)
-        {
-            double bestScore = isMaximizing ? double.NegativeInfinity : double.PositiveInfinity;
-
-            for (int row = 0; row < 3; row++)
-            {
-                for (int col = 0; col < 3; col++)
-                {
-                    if (gameBoard[row, col] == 0)
-                    {
-                        gameBoard[row, col] = isMaximizing ? 1 : 2; // make the move
-
-                        // gets button coordinates
-                        int buttonIndex = row * 3 + col;
-                        Button button = buttons[buttonIndex];
-
-                        double score = Minimax3(gameBoard, depth + 1, !isMaximizing); // flip flops between min and max to determine best outcome
-
-                        gameBoard[row, col] = 0; // undo the move
-
-                        if (isMaximizing)
-                        {
-                            bestScore = Math.Max(bestScore, score);
-                        }
-                        else
-                        {
-                            bestScore = Math.Min(bestScore, score);
-                        }
-                    }
-                }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                arrayString += backingArray[i, j].ToString() + " ";
             }
-            
-            return bestScore;
-        } 
+            arrayString += "\n";
+        }
 
-        return 0; // debug
+        Debug.Log(arrayString);
     }
 
 
-
-
-    
 }
