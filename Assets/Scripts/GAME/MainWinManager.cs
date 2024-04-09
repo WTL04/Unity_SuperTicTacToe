@@ -130,7 +130,7 @@ public class MainWinner : MonoBehaviour
     }
 
      //debugging 
-    void LogBackingArray() {
+    public void LogBackingArray() {
         string arrayString = "backingArray:\n";
 
         for (int i = 0; i < 3; i++) {

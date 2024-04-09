@@ -17,6 +17,11 @@ public class GridWinManager : MonoBehaviour
     public int[,] backingArray = new int[3, 3];
     
     
+    //property
+    public static int CurrentPlayer {
+        get {return currentPlayer;}
+    }
+
     void Start() 
     {
         crossWinner.SetActive(false);
@@ -37,16 +42,6 @@ public class GridWinManager : MonoBehaviour
         }
         currentPlayer = (currentPlayer == 1) ? 2 : 1; // compact if-else statement  
 
-    }
-
-    private void resetGrid() {
-        count = 0;
-        backingArray = new int[3, 3];
-    }
-
-    //property
-    public static int CurrentPlayer {
-        get {return currentPlayer;}
     }
 
     //checks if there are any wins in the backing array, set by the statusUpdate() function
@@ -141,6 +136,10 @@ public class GridWinManager : MonoBehaviour
 
     }
 
+    private void resetGrid() {
+        count = 0;
+        backingArray = new int[3, 3];
+    }
 
     //debugging 
     void LogBackingArray() {
