@@ -20,6 +20,7 @@ public class MainWinner : MonoBehaviour
     }
 
     //checks for currentPlayer, sets the backingArray to what the results are from sub-grids. 
+    // onClick() event
     public void MainGridUpdate(int gridIndex) 
     {
         count++;

@@ -12,6 +12,8 @@ public class CompManager : MonoBehaviour
     private AIdifficult AIdifficultObject; // reference to AIdifficult script, used to get difficulty
     public static int difficulty;
 
+    private CanvasManager canvasManager;
+
     // GridWinManager copy
     public static int currentPlayer = 2; // X = 1, O = 2 // currentPlayer changes on CLick() so X = 2 // STATIC for scope ranges throughtout all subgrids
     private int count = 0;
@@ -30,8 +32,9 @@ public class CompManager : MonoBehaviour
 
     void Start()
     {
-        // Find the AIdifficultObject in the scene
+        // Find object that references to AIdifficult and CanvasManager scripts
         AIdifficultObject = FindObjectOfType<AIdifficult>();
+        canvasManager = FindObjectOfType<CanvasManager>();
 
         // Get the difficulty from AIdifficultObject
         difficulty = AIdifficultObject.Difficulty;
@@ -42,6 +45,7 @@ public class CompManager : MonoBehaviour
         draw.SetActive(false);
     }
 
+    // helper method
     //adds 1 or 2 to backing array
     private void statusUpdate(int buttonIndex) {
         count++;
@@ -51,10 +55,12 @@ public class CompManager : MonoBehaviour
         }
     }
 
+    // onClick() event
     public void changeTurns(int buttonIndex)
     {
         currentPlayer = (currentPlayer == 1) ? 2 : 1; // compact if-else statement
         statusUpdate(buttonIndex);
+        LogBackingArray(); // debug
     }
 
 
@@ -70,80 +76,65 @@ public class CompManager : MonoBehaviour
 
                 if (currentPlayer == 1) {
                     crossWinner.SetActive(true);
-                    resetGrid();
                     return 1;
                 }
                 else {
                     circleWinner.SetActive(true);
-                    resetGrid();
                     return 2;
                 }
-                
-                
             }
             
             
             //column wins
             if (backingArray[0, i] != 0 && backingArray[0, i] == backingArray[1, i] && backingArray[0, i] == backingArray[2, i])
             {
-                //resetGrid();
                 if (currentPlayer == 1) {
                     crossWinner.SetActive(true);
-                    resetGrid();
                     return 1;
                 }
                 else {
                     circleWinner.SetActive(true);
-                    resetGrid();
                     return 2;
                 }
-                
             }
-
         }
 
 
         //diagonal  wins
         if (backingArray[0, 0] != 0 && backingArray[0, 0] == backingArray[1, 1] && backingArray[0, 0] == backingArray[2, 2]) 
         {
-            //resetGrid();
+
             if (currentPlayer == 1) {
                 crossWinner.SetActive(true);
-                resetGrid();
                 return 1;
             }
             else {
                 circleWinner.SetActive(true);
-                resetGrid();
                 return 2;
             }
-            
+
         }
 
         if (backingArray[0, 2] != 0 && backingArray[0, 2] == backingArray[1, 1] && backingArray[0, 2] == backingArray[2, 0]) 
         {
-
             
             if (currentPlayer == 1) {
                 crossWinner.SetActive(true);
-                resetGrid();
                 return 1;
                 
             }
             else {
                 circleWinner.SetActive(true);
-                resetGrid();
                 return 2;
                 
             }
-            
+
         }
 
         //draw
         if (count == 9) 
         {
             draw.SetActive(true);
-            resetGrid();
             return 3;
         }
 
@@ -196,9 +187,6 @@ public class CompManager : MonoBehaviour
                     break;
             }
         }
-
-       
-
     }
 
     private int Minimax3(int[,] gameBoard, int depth, bool isMaximizing)
