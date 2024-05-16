@@ -21,10 +21,6 @@ public class CompManager : MonoBehaviour
 
     public Button[] buttons;
 
-    public GameObject crossWinner;
-    public GameObject circleWinner;
-    public GameObject draw;
-
     //property for current player
     public static int CurrentPlayer {
         get {return currentPlayer;}
@@ -38,11 +34,6 @@ public class CompManager : MonoBehaviour
 
         // Get the difficulty from AIdifficultObject
         difficulty = AIdifficultObject.Difficulty;
-
-        // GridWinManager copy
-        crossWinner.SetActive(false);
-        circleWinner.SetActive(false);
-        draw.SetActive(false);
     }
 
     // helper method
@@ -56,13 +47,12 @@ public class CompManager : MonoBehaviour
     }
 
     // onClick() event
-    public void changeTurns(int buttonIndex)
+    public void updateBackingArray(int buttonIndex)
     {
         currentPlayer = (currentPlayer == 1) ? 2 : 1; // compact if-else statement
         statusUpdate(buttonIndex);
         LogBackingArray(); // debug
     }
-
 
     //checks if there are any wins in the backing array, set by the statusUpdate() function
     public int winCheck() 
@@ -73,29 +63,14 @@ public class CompManager : MonoBehaviour
             //row wins
             if (backingArray[i, 0] != 0 && backingArray[i, 0] == backingArray[i, 1] && backingArray[i, 0] == backingArray[i, 2]) 
             {
-
-                if (currentPlayer == 1) {
-                    crossWinner.SetActive(true);
-                    return 1;
-                }
-                else {
-                    circleWinner.SetActive(true);
-                    return 2;
-                }
+                return (currentPlayer == 1) ? 1 : 2;
             }
             
             
             //column wins
             if (backingArray[0, i] != 0 && backingArray[0, i] == backingArray[1, i] && backingArray[0, i] == backingArray[2, i])
             {
-                if (currentPlayer == 1) {
-                    crossWinner.SetActive(true);
-                    return 1;
-                }
-                else {
-                    circleWinner.SetActive(true);
-                    return 2;
-                }
+                return (currentPlayer == 1) ? 1 : 2;
             }
         }
 
@@ -103,38 +78,17 @@ public class CompManager : MonoBehaviour
         //diagonal  wins
         if (backingArray[0, 0] != 0 && backingArray[0, 0] == backingArray[1, 1] && backingArray[0, 0] == backingArray[2, 2]) 
         {
-
-            if (currentPlayer == 1) {
-                crossWinner.SetActive(true);
-                return 1;
-            }
-            else {
-                circleWinner.SetActive(true);
-                return 2;
-            }
-
+            return (currentPlayer == 1) ? 1 : 2;
         }
 
         if (backingArray[0, 2] != 0 && backingArray[0, 2] == backingArray[1, 1] && backingArray[0, 2] == backingArray[2, 0]) 
         {
-            
-            if (currentPlayer == 1) {
-                crossWinner.SetActive(true);
-                return 1;
-                
-            }
-            else {
-                circleWinner.SetActive(true);
-                return 2;
-                
-            }
-
+            return (currentPlayer == 1) ? 1 : 2;
         }
 
         //draw
         if (count == 9) 
         {
-            draw.SetActive(true);
             return 3;
         }
 
@@ -168,7 +122,6 @@ public class CompManager : MonoBehaviour
                     }
                     buttonToClick = buttons[randInt];
                     ClickButton(buttonToClick);
-
                     break;
 
                 case 2:

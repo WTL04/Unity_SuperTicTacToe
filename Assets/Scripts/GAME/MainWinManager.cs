@@ -13,10 +13,18 @@ public class MainWinner : MonoBehaviour
     public int currentPlayer;
     public int[,] backingArray = new int[3, 3];
 
+    public DisplaySubGridWins displaySubGridWins;
+
     //property
     public int[,] MainBackingArray
     {
         get {return backingArray;}
+    }
+
+
+    void Start()
+    {
+        displaySubGridWins = GetComponent<DisplaySubGridWins>();
     }
 
     //checks for currentPlayer, sets the backingArray to what the results are from sub-grids. 
@@ -37,6 +45,9 @@ public class MainWinner : MonoBehaviour
         currentPlayer = GridWinManager.CurrentPlayer;
         int result = AIsubGrids[gridIndex].winCheck();
         backingArray[gridIndex / 3, gridIndex % 3] = result;
+
+        // displays winner images in subgrid after win is detected
+        displaySubGridWins.DisplayWin(result, gridIndex);
         MainWinnerCheck();
     }
 
@@ -49,29 +60,17 @@ public class MainWinner : MonoBehaviour
             //row wins
             if (backingArray[i, 0] != 0 && backingArray[i, 0] == backingArray[i, 1] && backingArray[i, 0] == backingArray[i, 2]) 
             {
-
-                if (currentPlayer == 1) {
-                    ChangeScene(true);
-                }
-                else {
-                    ChangeScene(false);    
-                }
                 resetGrid();
+                SceneManager.LoadScene(currentPlayer == 1 ? "CrossWinner" : "CricleWinner");
+                
             }
             
             
             //column wins
             if (backingArray[0, i] != 0 && backingArray[0, i] == backingArray[1, i] && backingArray[0, i] == backingArray[2, i])
             {
-
-                if (currentPlayer == 1) {
-                    ChangeScene(true);
-                }
-                else {
-                    ChangeScene(false);    
-                }
                 resetGrid();
-                
+                SceneManager.LoadScene(currentPlayer == 1 ? "CrossWinner" : "CricleWinner");
             }
 
         }
@@ -79,35 +78,24 @@ public class MainWinner : MonoBehaviour
 
         //diagonal  wins
         if (backingArray[0, 0] != 0 && backingArray[0, 0] == backingArray[1, 1] && backingArray[0, 0] == backingArray[2, 2]) 
-        {
-
-            if (currentPlayer == 1) {
-                ChangeScene(true);
-            }
-            else {
-                ChangeScene(false);    
-            }
+        { 
             resetGrid();
-
+            SceneManager.LoadScene(currentPlayer == 1 ? "CrossWinner" : "CricleWinner");
+           
         }
 
         if (backingArray[0, 2] != 0 && backingArray[0, 2] == backingArray[1, 1] && backingArray[0, 2] == backingArray[2, 0]) 
         {
-
-            if (currentPlayer == 1) {
-                ChangeScene(true);                
-            }
-            else {
-                ChangeScene(false);                
-            }
             resetGrid();
-
+            SceneManager.LoadScene(currentPlayer == 1 ? "CrossWinner" : "CricleWinner");
         }
 
         //draw
         if (count == 81) 
         {
             resetGrid();
+            SceneManager.LoadScene("Draw");
+
         }
 
     }
@@ -115,19 +103,6 @@ public class MainWinner : MonoBehaviour
     private void resetGrid() {
         count = 0;
         backingArray = new int[3, 3];
-    }
-
-    //change scene to winner
-    public void ChangeScene(bool winner) 
-    {
-        if (winner) {
-            //X win
-            SceneManager.LoadScene("CrossWinner");
-        } else {
-            //O win
-            SceneManager.LoadScene("CricleWinner");
-        }
-            
     }
 
      //debugging 
