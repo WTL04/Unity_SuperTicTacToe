@@ -61,7 +61,7 @@ public class MainWinner : MonoBehaviour
             if (backingArray[i, 0] != 0 && backingArray[i, 0] == backingArray[i, 1] && backingArray[i, 0] == backingArray[i, 2]) 
             {
                 resetGrid();
-                SceneManager.LoadScene(currentPlayer == 1 ? "CrossWinner" : "CricleWinner");
+                SceneManager.LoadScene(currentPlayer == 1 ? "CircleWinner" : "CrossWinner");
                 
             }
             
@@ -70,7 +70,7 @@ public class MainWinner : MonoBehaviour
             if (backingArray[0, i] != 0 && backingArray[0, i] == backingArray[1, i] && backingArray[0, i] == backingArray[2, i])
             {
                 resetGrid();
-                SceneManager.LoadScene(currentPlayer == 1 ? "CrossWinner" : "CricleWinner");
+                SceneManager.LoadScene(currentPlayer == 1 ? "CircleWinner" : "CrossWinner");
             }
 
         }
@@ -80,14 +80,14 @@ public class MainWinner : MonoBehaviour
         if (backingArray[0, 0] != 0 && backingArray[0, 0] == backingArray[1, 1] && backingArray[0, 0] == backingArray[2, 2]) 
         { 
             resetGrid();
-            SceneManager.LoadScene(currentPlayer == 1 ? "CrossWinner" : "CricleWinner");
+            SceneManager.LoadScene(currentPlayer == 1 ? "CircleWinner" : "CrossWinner");
            
         }
 
         if (backingArray[0, 2] != 0 && backingArray[0, 2] == backingArray[1, 1] && backingArray[0, 2] == backingArray[2, 0]) 
         {
             resetGrid();
-            SceneManager.LoadScene(currentPlayer == 1 ? "CrossWinner" : "CricleWinner");
+            SceneManager.LoadScene(currentPlayer == 1 ? "CircleWinner" : "CrossWinner");
         }
 
         //draw

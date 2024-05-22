@@ -63,14 +63,14 @@ public class CompManager : MonoBehaviour
             //row wins
             if (backingArray[i, 0] != 0 && backingArray[i, 0] == backingArray[i, 1] && backingArray[i, 0] == backingArray[i, 2]) 
             {
-                return (currentPlayer == 1) ? 1 : 2;
+                return backingArray[i, 0];
             }
             
             
             //column wins
             if (backingArray[0, i] != 0 && backingArray[0, i] == backingArray[1, i] && backingArray[0, i] == backingArray[2, i])
             {
-                return (currentPlayer == 1) ? 1 : 2;
+                return backingArray[0, i];
             }
         }
 
@@ -78,12 +78,12 @@ public class CompManager : MonoBehaviour
         //diagonal  wins
         if (backingArray[0, 0] != 0 && backingArray[0, 0] == backingArray[1, 1] && backingArray[0, 0] == backingArray[2, 2]) 
         {
-            return (currentPlayer == 1) ? 1 : 2;
+            return backingArray[0, 0];
         }
 
         if (backingArray[0, 2] != 0 && backingArray[0, 2] == backingArray[1, 1] && backingArray[0, 2] == backingArray[2, 0]) 
         {
-            return (currentPlayer == 1) ? 1 : 2;
+            return backingArray[0, 2];
         }
 
         //draw
@@ -113,68 +113,76 @@ public class CompManager : MonoBehaviour
             switch(difficulty)
             {
                 case 1:
-                    // easy mode, randomly chooses
-                    int randInt = UnityEngine.Random.Range(0, 9);
-                    
-                    while (backingArray[randInt / 3, randInt % 3] != 0)
-                    {
-                        randInt = UnityEngine.Random.Range(0, 9);
-                    }
-                    buttonToClick = buttons[randInt];
-                    ClickButton(buttonToClick);
+                    ClickButton(buttons[EasyAIDiff()]);
                     break;
 
                 case 2:
-                    // normal mode
+                    // normal 
+                    ClickButton(buttons[MidAIDiff()]);
                     break;
 
                 case 3:
                     // hard mode
-                    int bestMoveIndex = Minimax3(backingArray, 0, true); 
-                    if (bestMoveIndex != -1)
-                    {
-                        buttonToClick = buttons[bestMoveIndex];
-                        ClickButton(buttonToClick);
-                    }
 
                     break;
             }
         }
     }
 
-    private int Minimax3(int[,] gameBoard, int depth, bool isMaximizing)
+    private int EasyAIDiff()
     {
-        Debug.Log($"Depth: {depth}");
-        // Base case
-        if (depth == 9)
+        // easy mode, randomly chooses
+        int randInt = UnityEngine.Random.Range(0, 9);
+        
+        while (backingArray[randInt / 3, randInt % 3] != 0)
         {
-            return -1; // Return invalid move
+            randInt = UnityEngine.Random.Range(0, 9);
         }
 
-        int bestMoveIndex = -1;
-        double bestScore = isMaximizing ? double.NegativeInfinity : double.PositiveInfinity;
-
-        for (int index = 0; index < 9; index++)
-        {
-            int row = index / 3;
-            int col = index % 3;
-
-            if (gameBoard[row, col] == 0)
-            {
-                gameBoard[row, col] = isMaximizing ? 1 : 2; // make the move
-                double score = Minimax3(gameBoard, depth + 1, !isMaximizing); // flip flops between min and max to determine best outcome
-                gameBoard[row, col] = 0; // undo the move
-
-                if ((isMaximizing && score > bestScore) || (!isMaximizing && score < bestScore))
-                {
-                    bestScore = score;
-                    bestMoveIndex = index;
-                }
-            }
-        }
-        Debug.Log($"Depth: {depth}, Best Move Index: {bestMoveIndex}");
-        return bestMoveIndex;
+        return randInt;
     }
+
+    private int MidAIDiff()
+    {
+        // iterates thru backingArray
+        for (int i = 0; i < 9; i++)
+        {
+            int row = i / 3;
+            int col = i % 3;
+
+            if (backingArray[row, col] == 0)
+            {
+                // simulate Ai move
+                backingArray[row, col] = 2;
+
+                // if 2 in a row, make winning move
+                if (winCheck() == 2)
+                {
+                    backingArray[row, col] = 0;
+                    Debug.Log("winning move");
+                    return i;
+                }
+                backingArray[row, col] = 1;
+
+                // if player 2 in a row, block move
+                if (winCheck() == 1)
+                {
+                    backingArray[row, col] = 0;
+                    Debug.Log("blocking move");
+                    return i;
+                }
+                backingArray[row, col] = 0;
+
+            }
+
+        }
+
+
+        // return random move
+        int randInt = EasyAIDiff();
+        return randInt;
+    }
+
 
     // GridWinManager copy
     private void resetGrid() 
