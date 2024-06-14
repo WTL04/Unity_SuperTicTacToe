@@ -946,6 +946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6447212611057554896}
   - component: {fileID: 393798348945798762}
+  - component: {fileID: 335423288618707326}
   m_Layer: 0
   m_Name: AIGame
   m_TagString: Untagged
@@ -999,6 +1000,18 @@ MonoBehaviour:
   - {fileID: 158308804311179718}
   - {fileID: 1027105114326402399}
   - {fileID: 8076716620316100919}
+--- !u!114 &335423288618707326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944051860028772532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02e930b0b926c247abc81b4268288d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5738508053235848000
 GameObject:
   m_ObjectHideFlags: 0

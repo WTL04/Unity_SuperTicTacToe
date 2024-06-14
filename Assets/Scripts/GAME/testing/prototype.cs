@@ -6,13 +6,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class CompManager : MonoBehaviour
+public class prototype : MonoBehaviour
 {
-
-    private AIdifficult AIdifficultObject; // reference to AIdifficult script, used to get difficulty
     public static int difficulty;
-
-    private CanvasManager canvasManager;
 
     private SimpleMinimax minimax;
 
@@ -36,13 +32,8 @@ public class CompManager : MonoBehaviour
     void Start()
     {
         // Find object that references to AIdifficult, CanvasManager, SimpleMinimax scripts
-        AIdifficultObject = FindObjectOfType<AIdifficult>();
-        canvasManager = FindObjectOfType<CanvasManager>();
         minimax = FindObjectOfType<SimpleMinimax>();
-
-
-        // Get the difficulty from AIdifficultObject
-        difficulty = AIdifficultObject.Difficulty;
+        difficulty = 3;
     }
 
     // helper method
@@ -60,6 +51,7 @@ public class CompManager : MonoBehaviour
     {
         currentPlayer = (currentPlayer == 1) ? 2 : 1; // compact if-else statement
         statusUpdate(buttonIndex);
+        LogBackingArray();
     }
 
     //checks if there are any wins in the backing array, set by the statusUpdate() function

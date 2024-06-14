@@ -9,8 +9,7 @@ public class CanvasManager : MonoBehaviour
     public GameObject[] subGrids;
     public List<GridWinManager> gridWins;
     public List<CompManager> AIgridWins;
-
-    private int nearestGrid = -1;
+    
     private MainWinner mainWinner;
     private int [,] backingArray;
 
@@ -41,78 +40,41 @@ public class CanvasManager : MonoBehaviour
     //creates a time delay in switching canvases
     IEnumerator CanvasDelay(int canvasIndex)
     {
+        //testing, later reset to 1
+        yield return new WaitForSeconds(0.5f); 
 
-        yield return new WaitForSeconds(0.5f); //testing, later reset to 1
-        mainWinner = subGrids[canvasIndex].GetComponentInParent<MainWinner>(); //grants access to MainWinner backingArray
+        //grants access to MainWinner backingArray
+        mainWinner = subGrids[canvasIndex].GetComponentInParent<MainWinner>();
+
+        // flags if buttonIndex and canvasIndex are equal and subgrid won
         bool wonByMove = false;
 
-        if (mainWinner != null)
-        {
-            backingArray = mainWinner.MainBackingArray;
-        }
+        // get Main Backing Array
+        backingArray = mainWinner.MainBackingArray;
 
         if (wonGrids.Contains(canvasIndex))
         {
-            nearestGrid = graph.SearchNearestGrid(canvasIndex);
-            subGrids[nearestGrid].SetActive(true);
+            canvasIndex = graph.SearchNearestGrid(canvasIndex);
         }
-        else 
-        {
-            nearestGrid = -1;
-        }
-
 
         for (int i = 0; i < subGrids.Length; i++)
         {
-            // result = gridWins[i].winCheck();
-
             //if something on the backingArray is not 0, then keep it active
             if (backingArray[i / 3, i % 3] != 0 && !wonGrids.Contains(i)) 
             {
-                //disables interaction after win
-                GraphicRaycaster raycaster = GetComponentInChildren<GraphicRaycaster>();
-                raycaster.enabled = false;
-
-                subGrids[i].SetActive(true);
                 wonByMove = true;
                 wonGrids.Add(i);
-
             }
-    
         }
-
+        
         if (wonByMove && wonGrids.Contains(canvasIndex))
         {
-            nearestGrid = graph.SearchNearestGrid(canvasIndex);
+            canvasIndex = graph.SearchNearestGrid(canvasIndex);
         }
-
 
         for (int i = 0; i < subGrids.Length; i++)
         {
-            // if (wonGrids.Contains(i) || i == nearestGrid || i == canvasIndex)
-            // {
-            //     subGrids[i].SetActive(true);
-            // }
-            // else 
-            // {
-            //     subGrids[i].SetActive(false);
-            // }
-
-            //prototype 1
-
-            if (i == nearestGrid || i == canvasIndex)
-            {
-                subGrids[i].SetActive(true);
-            }
-            else if (wonGrids.Contains(i))
-            {
-                DisableButtons(i);
-                subGrids[i].SetActive(false);
-            }
-            else
-            {
-                subGrids[i].SetActive(false);
-            }
+            subGrids[i].SetActive(i == canvasIndex ? true : false);
         }
    
     }
@@ -122,74 +84,6 @@ public class CanvasManager : MonoBehaviour
     {
         StartCoroutine(AICanvasDelay(canvasIndex));
     }
-
-    // prototype 1
-    // IEnumerator AICanvasDelay(int canvasIndex)
-    // {
-
-    //     yield return new WaitForSeconds(0.5f);
-    //     mainWinner = subGrids[canvasIndex].GetComponentInParent<MainWinner>(); //grants access to MainWinner backingArray
-    //     bool wonByMove = false;
-
-    //     if (mainWinner != null)
-    //     {
-    //         backingArray = mainWinner.MainBackingArray;
-    //     }
-
-    //     if (wonGrids.Contains(canvasIndex))
-    //     {
-    //         nearestGrid = graph.SearchNearestGrid(canvasIndex);
-    //         subGrids[nearestGrid].SetActive(true);
-    //     }
-    //     else 
-    //     {
-    //         nearestGrid = -1;
-    //     }
-
-
-    //     for (int i = 0; i < subGrids.Length; i++)
-    //     {
-    //         //if something on the backingArray is not 0, then keep it active
-    //         if (backingArray[i / 3, i % 3] != 0 && !wonGrids.Contains(i)) 
-    //         {
-    //             //disables interaction after win
-    //             GraphicRaycaster raycaster = GetComponentInChildren<GraphicRaycaster>();
-    //             raycaster.enabled = false;
-
-    //             subGrids[i].SetActive(true);
-    //             wonByMove = true;
-    //             wonGrids.Add(i);
-
-    //         }
-    //     }
-
-    //     if (wonByMove && wonGrids.Contains(canvasIndex))
-    //     {
-    //         nearestGrid = graph.SearchNearestGrid(canvasIndex);
-    //     }
-
-
-    //     for (int i = 0; i < subGrids.Length; i++)
-    //     {
-    //         if ( i == nearestGrid || i == canvasIndex)
-    //         {
-    //             subGrids[i].SetActive(true);
-    //         }
-    //         else if (wonGrids.Contains(i))
-    //         {
-    //             subGrids[i].SetActive(false);
-    //         }
-    //         else
-    //         {
-    //             subGrids[i].SetActive(false);
-    //         }
-    //     }
-
-    //     // flag AIcanvasChange set true for ai to move
-    //     AIcanvasChanged = true;
-    // }
-
-    // prototype 2
 
     IEnumerator AICanvasDelay(int canvasIndex)
     {
@@ -234,8 +128,6 @@ public class CanvasManager : MonoBehaviour
         // flag AIcanvasChange set true for ai to move
         AIcanvasChanged = true;
     }
-
-    
 
 
     public void CreateGraph()

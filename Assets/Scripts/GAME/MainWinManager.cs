@@ -28,20 +28,23 @@ public class MainWinner : MonoBehaviour
     }
 
     //checks for currentPlayer, sets the backingArray to what the results are from sub-grids. 
-    // onClick() event
+
+    // onClick() event, for multiplayer 
     public void MainGridUpdate(int gridIndex) 
     {
         count++;
         currentPlayer = GridWinManager.CurrentPlayer;
         int result = subGrids[gridIndex].winCheck();
         backingArray[gridIndex / 3, gridIndex % 3] = result;
+
+        // displays winner images in subgrid after win is detected
+        displaySubGridWins.DisplayWin(result, gridIndex);
         MainWinnerCheck();
     }
 
-    // for AI singleplayer mode
+    // onClick(), for singleplayer
     public void AIMainGridUpdate(int gridIndex) 
     {
-        count++;
         currentPlayer = GridWinManager.CurrentPlayer;
         int result = AIsubGrids[gridIndex].winCheck();
         backingArray[gridIndex / 3, gridIndex % 3] = result;
@@ -49,6 +52,20 @@ public class MainWinner : MonoBehaviour
         // displays winner images in subgrid after win is detected
         displaySubGridWins.DisplayWin(result, gridIndex);
         MainWinnerCheck();
+        checkForDraw(result);
+    }
+
+    private void checkForDraw(int result)
+    {
+        if (result != 0)
+        {
+            count++;
+        }
+
+        if (count >= 9)
+        {
+            SceneManager.LoadScene("Draw");
+        }
     }
 
     //checks for winner according to the backingArray
@@ -61,7 +78,7 @@ public class MainWinner : MonoBehaviour
             if (backingArray[i, 0] != 0 && backingArray[i, 0] == backingArray[i, 1] && backingArray[i, 0] == backingArray[i, 2]) 
             {
                 resetGrid();
-                SceneManager.LoadScene(currentPlayer == 1 ? "CircleWinner" : "CrossWinner");
+                SceneManager.LoadScene(currentPlayer == 2 ? "CircleWinner" : "CrossWinner");
                 
             }
             
@@ -70,7 +87,7 @@ public class MainWinner : MonoBehaviour
             if (backingArray[0, i] != 0 && backingArray[0, i] == backingArray[1, i] && backingArray[0, i] == backingArray[2, i])
             {
                 resetGrid();
-                SceneManager.LoadScene(currentPlayer == 1 ? "CircleWinner" : "CrossWinner");
+                SceneManager.LoadScene(currentPlayer == 2 ? "CircleWinner" : "CrossWinner");
             }
 
         }
@@ -80,22 +97,14 @@ public class MainWinner : MonoBehaviour
         if (backingArray[0, 0] != 0 && backingArray[0, 0] == backingArray[1, 1] && backingArray[0, 0] == backingArray[2, 2]) 
         { 
             resetGrid();
-            SceneManager.LoadScene(currentPlayer == 1 ? "CircleWinner" : "CrossWinner");
+            SceneManager.LoadScene(currentPlayer == 2 ? "CircleWinner" : "CrossWinner");
            
         }
 
         if (backingArray[0, 2] != 0 && backingArray[0, 2] == backingArray[1, 1] && backingArray[0, 2] == backingArray[2, 0]) 
         {
             resetGrid();
-            SceneManager.LoadScene(currentPlayer == 1 ? "CircleWinner" : "CrossWinner");
-        }
-
-        //draw
-        if (count == 81) 
-        {
-            resetGrid();
-            SceneManager.LoadScene("Draw");
-
+            SceneManager.LoadScene(currentPlayer == 2 ? "CircleWinner" : "CrossWinner");
         }
 
     }
