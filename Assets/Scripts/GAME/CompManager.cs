@@ -2,18 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine;
 using UnityEngine.UI;
 
 
 public class CompManager : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject overlay; // stops button interaction after player move
 
     private AIdifficult AIdifficultObject; // reference to AIdifficult script, used to get difficulty
     public static int difficulty;
 
     private CanvasManager canvasManager;
-
     private SimpleMinimax minimax;
 
     // GridWinManager copy
@@ -43,6 +43,9 @@ public class CompManager : MonoBehaviour
 
         // Get the difficulty from AIdifficultObject
         difficulty = AIdifficultObject.Difficulty;
+
+        // sets overlay to false
+        overlay.SetActive(false);
     }
 
     // helper method
@@ -54,6 +57,7 @@ public class CompManager : MonoBehaviour
             backingArray[buttonIndex / 3, buttonIndex % 3] = currentPlayer;
         }
     }
+
 
     // onClick() event
     public void updateBackingArray(int buttonIndex)
@@ -111,6 +115,8 @@ public class CompManager : MonoBehaviour
 
     IEnumerator DelayedAImove()
     {
+        overlay.SetActive(true);
+
         yield return new WaitForSeconds(1f);
 
         // AI = circle, checks for 1 because changeTurns turns it into 2 after being pressed
@@ -135,6 +141,8 @@ public class CompManager : MonoBehaviour
                     break;
             }
         }
+        overlay.SetActive(false);
+
     }
 
     private int EasyAIDiff()

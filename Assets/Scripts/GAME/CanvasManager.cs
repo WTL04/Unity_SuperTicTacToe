@@ -38,7 +38,7 @@ public class CanvasManager : MonoBehaviour
     }
 
     //creates a time delay in switching canvases
-    IEnumerator CanvasDelay(int canvasIndex)
+    private IEnumerator CanvasDelay(int canvasIndex)
     {
         //testing, later reset to 1
         yield return new WaitForSeconds(0.5f); 

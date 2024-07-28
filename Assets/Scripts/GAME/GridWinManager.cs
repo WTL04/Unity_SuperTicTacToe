@@ -33,7 +33,6 @@ public class GridWinManager : MonoBehaviour
     {
         currentPlayer = (currentPlayer == 1) ? 2 : 1; // compact if-else statement
         statusUpdate(buttonIndex);
-        LogBackingArray(); // debug
     }
 
     //checks if there are any wins in the backing array, set by the statusUpdate() function

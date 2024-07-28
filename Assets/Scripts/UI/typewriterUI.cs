@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class typewriterUI : MonoBehaviour
@@ -14,26 +15,44 @@ public class typewriterUI : MonoBehaviour
 	[SerializeField] string leadingChar = "";
 	[SerializeField] bool leadingCharBeforeDelay = false;
 
+	private string playerPrefsKey;
+
 	// Use this for initialization
 	void Start()
 	{
 		_text = GetComponent<Text>()!;
 		_tmpProText = GetComponent<TMP_Text>()!;
 
-		if(_text != null)
+		playerPrefsKey = $"{SceneManager.GetActiveScene().name}_{gameObject.name}_TypewriterDone";
+
+		if (_text != null)
         {
 			writer = _text.text;
-			_text.text = "";
 
-			StartCoroutine("TypeWriterText");
+			if (PlayerPrefs.GetInt(playerPrefsKey, 0) == 1)
+			{
+				_text.text = writer;
+			}
+			else
+			{
+				_text.text = "";
+				StartCoroutine(TypeWriterText());
+			}
 		}
 
 		if (_tmpProText != null)
 		{
 			writer = _tmpProText.text;
-			_tmpProText.text = "";
 
-			StartCoroutine("TypeWriterTMP");
+			if (PlayerPrefs.GetInt(playerPrefsKey, 0) == 1)
+			{
+				_tmpProText.text = writer;
+			}
+			else
+			{
+				_tmpProText.text = "";
+				StartCoroutine(TypeWriterTMP());
+			}
 		}
 	}
 
@@ -58,6 +77,9 @@ public class typewriterUI : MonoBehaviour
         {
 			_text.text = _text.text.Substring(0, _text.text.Length - leadingChar.Length);
 		}
+
+		PlayerPrefs.SetInt(playerPrefsKey, 1);
+		PlayerPrefs.Save();
 	}
 
 	IEnumerator TypeWriterTMP()
@@ -81,5 +103,8 @@ public class typewriterUI : MonoBehaviour
 		{
 			_tmpProText.text = _tmpProText.text.Substring(0, _tmpProText.text.Length - leadingChar.Length);
 		}
+
+		PlayerPrefs.SetInt(playerPrefsKey, 1);
+		PlayerPrefs.Save();
 	}
 }
